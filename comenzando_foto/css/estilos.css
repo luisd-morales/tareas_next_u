@@ -1,0 +1,200 @@
+/* CSS General */
+@font-face {
+	font-family: 'dancing-script';
+	src: url(../fonts/DancingScript-Regular.ttf)
+}
+body{
+	background: #02010a;
+	font-family: "dancing-script";
+	font-size: 18px;
+}
+#header{
+	background: #5b7989;
+	color: white;
+    font-size: 22px;
+	padding: 1% 1% 1% 1%; 
+	text-shadow: 2px 2px #02010a;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.pmenu{
+    color: white;
+	margin: 5px;
+}
+a{
+	color: white;
+	margin: 5px;
+    text-decoration-line: underline;
+}
+.imagen{
+	width: 90%;
+	box-shadow: 2px 2px #02010a;
+}
+div img{
+	border: solid 2px black;
+}
+.icon{
+	width: 35px;
+    border: none;
+}
+.article{
+    text-align: center;
+	background-color: #82c3a6;
+	padding: 2% 0%;
+}
+#imgcent{
+	border: none;
+    width: 90%;
+}
+#secundaria{
+	background-color: #d5c75f;
+	padding: 2% 0%;
+	border: 1px;
+	text-align: center;	
+}
+#left{
+	padding: 0%;
+	transition-property: transform: rotate;
+	transition-duration: 1s;	
+}
+#left:hover{
+	transform: rotate(10deg);
+}
+#right{
+	padding: 0%;
+	transition-property: transform: translate;	
+	transition-duration: 1s;	
+}
+
+#right:hover{
+	transform: translate(5px, -20px);
+}
+p{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+#footer{
+	background: #C6d5c5;
+	padding: 1% 1% 5% 1%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+#footer div{
+		padding: 2% 2% 2% 2%;
+}
+/* CSS Desktop */
+@media(min-width: 900px){
+#contenido{
+		width: 900px;
+		margin: 0 auto;
+}
+#header {
+		display: flex;
+}
+#title{
+	padding: 1% 0%;
+	font-size: 1.5em;
+	text-align: left;
+	flex: auto;
+}
+#menu{
+	padding: 1.2% 1%;
+	font-size: 1em;
+	text-align: right;
+	flex: auto;
+}		
+#footer{
+	display: flex;
+}
+.foo1{
+    width: 25%;
+}
+.foo2{
+    width: 25%;
+}
+.foo3{
+    width: 25%;
+}
+.foo4{
+    width: 25%;
+}
+.fleximg{
+    background-color: #d5c75f;
+	display: flex;
+}
+#imagenes{
+    display: flex;
+}
+.contenedor{
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	width: 33.3%;
+}
+}
+/* CSS Movil */
+@media(max-width: 900px){
+#contenido{
+		width: 100%;
+		margin: 0 auto;
+}
+#title{
+		text-align: center;
+}
+#menu{
+		text-align: center;
+}
+#imagenes{
+    width: 100%;;
+}
+.contenedor{
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+}	
+}
+/* CSS Imagenes */
+#img1{
+	-webkit-filter: blur(10px);
+    width: 100%;
+}
+#img2{
+	-webkit-filter: grayscale(100%);
+    width: 100%;
+}
+
+#img3{
+	-webkit-filter: sepia(90%);
+    width: 100%;
+}
+#img4{
+	-webkit-filter: grayscale(100%);
+    width: 100%;
+}
+#img5{
+    width: 100%;
+}
+#img6{
+	-webkit-filter: grayscale(100%);
+    width: 100%;
+}
+/* CSS Animación */
+@keyframes animation-slidein{
+	0%{
+		margin-top: 150%;
+	}
+	60%{
+		margin-top: -5%;
+	}
+	100%{
+		margin-top: 0%;
+	}
+}
+.animation{
+	animation-name: animation-slidein;
+	animation-duration: 1s;
+	-webkit-animation-delay: 0s;
+	-moz-animation-delay: 0s;
+	-o-animation-delay: 0s;
+	animation-delay: 0s;
+}
